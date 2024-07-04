@@ -23,9 +23,7 @@ public class MaximumWealth {
 		int max = 0, sum = 0;
 		for (int[] a : accounts) {
 			sum = 0;
-			for (int i = 0; i < a.length; i++) {
-				sum += a[i];
-			}
+			for (int i = 0; i < a.length; i++) sum += a[i];
 			if (sum > max)
 				max = sum;
 		}
