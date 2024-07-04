@@ -1,10 +1,11 @@
-package arrays;
+package arraysandarraylist;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 /**
  * @author Ananda Lakshmi Vivekananthan
+ *
  * Problem Description:
  * Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
  * <p>
@@ -26,7 +27,6 @@ public class RunningSumOfOndDArray {
 	}
 
 	public static int[] runningSum(int[] nums) {
-		final int len = nums.length;
 		for (int i = 1; i < nums.length; i++) {
 			nums[i] = nums[i - 1] + nums[i];
 		}
