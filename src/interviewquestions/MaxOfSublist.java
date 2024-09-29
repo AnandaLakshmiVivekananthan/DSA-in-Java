@@ -1,4 +1,4 @@
-package arrays.arraylist;
+package interviewquestions;
 
 import java.util.ArrayList;
 import java.util.Collections;
