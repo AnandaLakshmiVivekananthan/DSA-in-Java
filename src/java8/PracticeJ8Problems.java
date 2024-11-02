@@ -65,7 +65,12 @@ public class PracticeJ8Problems {
 						.sum())
 				.forEach(n -> System.out.print("\t" + n));
 
-
+		//find the first non repeating character in a string
+		System.out.println("\n First non repeating character in string:");
+		String str = "GEEKSFORGEEKS";
+		str.chars().mapToObj(c -> (char) c)
+				.filter(ch -> str.indexOf(ch) == str.lastIndexOf(ch))
+				.forEach(ch -> System.out.print("\t" + ch));
 
 	}
 }
