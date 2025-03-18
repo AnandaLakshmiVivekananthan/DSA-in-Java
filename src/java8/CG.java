@@ -19,7 +19,7 @@ public class CG {
 			}
 		}
 
-		strings.stream().filter(s-> s.contains("a")).
+//		strings.stream().filter(s-> s.contains("a")).
 		float avg = total/strings.size();
 		System.out.println(avg);
 		System.out.println(anum);
