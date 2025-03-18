@@ -72,5 +72,17 @@ public class PracticeJ8Problems {
 				.filter(ch -> str.indexOf(ch) == str.lastIndexOf(ch))
 				.forEach(ch -> System.out.print("\t" + ch));
 
+		//find the kth largest number in an array
+		int[] arr = {15, 5, 8, 9, 2, 7, 0, 1, 15, 6, 5, 8, 1};
+		int k = 2;
+		System.out.println("\n Unsorted arr:" + Arrays.toString(arr) + "\t k:" + k);
+		System.out.println(" kth smallest element:" +
+				IntStream.of(arr).boxed().sorted(Comparator.naturalOrder()).distinct().skip(k-1).findFirst().orElse(Integer.MIN_VALUE));
+		System.out.println(" kth largest element:"+
+				IntStream.of(arr).boxed().sorted(Comparator.reverseOrder()).distinct().skip(k-1).findFirst().get());
+		Arrays.sort(arr);
+		System.out.println(" Sorted Array: "+Arrays.toString(arr));
+
+
 	}
 }
