@@ -1,4 +1,4 @@
-package java8;
+package interviewquestions;
 
 /**
  * @author Ananda Lakshmi Vivekananthan

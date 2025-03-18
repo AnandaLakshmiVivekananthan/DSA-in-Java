@@ -1,4 +1,4 @@
-package java8;
+package interviewquestions;
 
 import java.util.List;
 
